@@ -1,0 +1,12 @@
+ul {
+  list-style-type: none;
+}
+
+.container {
+  border-radius: 10px;
+}
+
+.search {
+  border-radius: 25px;
+  padding: 10px;
+}
