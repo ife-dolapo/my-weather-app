@@ -3,6 +3,11 @@ ul {
 }
 
 .container {
+  margin-top: 1cm;
+  border-radius: 10px;
+}
+
+.entercity {
   border-radius: 10px;
 }
 
