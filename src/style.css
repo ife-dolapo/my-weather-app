@@ -15,3 +15,8 @@ ul {
   border-radius: 10px;
   padding: 10px 30px;
 }
+
+.col-3 {
+  font-size: 25px;
+  font-weight: bold;
+}
