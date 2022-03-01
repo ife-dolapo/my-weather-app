@@ -2,10 +2,6 @@ ul {
   list-style-type: none;
 }
 
-a {
-  display: block;
-  text-align: center;
-}
 .container {
   font-family: "Titillium Web", sans-serif;
   font-weight: 300;
@@ -13,18 +9,26 @@ a {
   border-radius: 10px;
 }
 
+.app-body {
+  border: 1px solid plum;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
 .entercity {
   border-radius: 10px;
   border-style: ridge;
+  margin-top: 0.5cm;
 }
 
 .search {
   border-radius: 10px;
   padding: 1px 30px;
   border-style: ridge;
+  margin-top: 0.5cm;
 }
 
 .col-3 {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 400;
 }
