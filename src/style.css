@@ -2,7 +2,6 @@ body {
   font-family: "Titillium Web", sans-serif;
   font-weight: 300;
   border-radius: 10px;
-
   margin-top: 1cm;
 }
 
@@ -20,7 +19,6 @@ ul {
 .app-body {
   border-radius: 10px;
   border: 1px solid plum;
-
   padding: 10px;
 }
 
@@ -37,7 +35,11 @@ ul {
   margin-top: 0.5cm;
 }
 
-.col-3 {
-  font-size: 30px;
-  font-weight: 400;
+.weather-temp strong {
+  font-size: 64px;
+}
+
+.units {
+  position: relative;
+  top: -32px;
 }
