@@ -5,6 +5,14 @@ body {
   margin-top: 1cm;
 }
 
+img {
+  float: right;
+}
+
+.app-body.clear {
+  clear: both;
+}
+
 ul {
   list-style-type: none;
   padding: 0px;
@@ -18,7 +26,7 @@ ul {
 
 .app-body {
   border-radius: 10px;
-  border: 1px solid plum;
+  border: 2px solid #6c62ff;
   padding: 10px;
 }
 
