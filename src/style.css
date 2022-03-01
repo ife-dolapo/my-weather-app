@@ -3,6 +3,8 @@ ul {
 }
 
 .container {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
   margin-top: 1cm;
   border-radius: 10px;
 }
@@ -19,9 +21,4 @@ ul {
 .col-3 {
   font-size: 25px;
   font-weight: bold;
-}
-
-body {
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 300;
 }
