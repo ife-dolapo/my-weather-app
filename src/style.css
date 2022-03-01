@@ -11,11 +11,13 @@ ul {
 
 .entercity {
   border-radius: 10px;
+  border-style: ridge;
 }
 
 .search {
   border-radius: 10px;
   padding: 1px 30px;
+  border-style: ridge;
 }
 
 .col-3 {
