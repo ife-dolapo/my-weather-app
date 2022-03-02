@@ -5,24 +5,14 @@ body {
   margin-top: 1cm;
 }
 
-img {
-  float: right;
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: none;
-}
-
-img {
-  float: right;
-}
-
 ul {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
+}
+
+img {
+  float: right;
 }
 
 .app-body-wrapper {
@@ -49,12 +39,15 @@ ul {
   margin-top: 0.5cm;
 }
 
+.weather-temp {
+  display: inline;
+}
 .weather-temp strong {
-  font-size: 64px;
+  font-size: 60px;
 }
 
 .units {
-  position: fixed;
-  text-align: left;
-  top: 215px;
+  position: relative;
+  top: -35px;
+  font-size: small;
 }

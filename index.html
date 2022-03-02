@@ -17,6 +17,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
@@ -37,20 +38,17 @@
               <button class="search" id="citybutton">Search</button>
             </div>
           </div>
-          <h1>Hamilton</h1>
-          <div class="clearfix">
-            <img src="src/weatherapp.png" alt="" width="180" />
+          <h1 id="city">Hamilton</h1>
+          <div>
+            <img src="src/weatherapp.png" alt="" width="160" />
           </div>
           <ul>
             <li>Monday, 2:33pm</li>
-            <li>Mostly Cloudy</li>
+            <li id="weather-description">Mostly Cloudy</li>
           </ul>
-          <div class="row">
-            <div class="col-3">
-              <div class="weather-temp">
-                <strong>7</strong><span class="units">℃|<a href="#">℉</a></span>
-              </div>
-            </div>
+          <div class="weather-temp">
+            <strong id="temperature">7</strong
+            ><span class="units">℃ | <a href="#">℉</a></span>
           </div>
         </div>
         <small>
