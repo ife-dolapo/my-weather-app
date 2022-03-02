@@ -9,8 +9,14 @@ img {
   float: right;
 }
 
-.app-body.clear {
+.clearfix::after {
+  content: "";
   clear: both;
+  display: none;
+}
+
+img {
+  float: right;
 }
 
 ul {
@@ -48,6 +54,7 @@ ul {
 }
 
 .units {
-  position: relative;
-  top: -32px;
+  position: fixed;
+  text-align: left;
+  top: 215px;
 }
