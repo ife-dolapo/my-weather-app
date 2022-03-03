@@ -11,6 +11,10 @@ ul {
   margin: 0px;
 }
 
+li::first-letter {
+  text-transform: capitalize;
+}
+
 img {
   float: right;
 }
@@ -42,6 +46,7 @@ img {
 .weather-temp {
   display: inline;
 }
+
 .weather-temp strong {
   font-size: 60px;
 }
