@@ -30,11 +30,12 @@ function displayTemperature(response) {
   document.querySelector("#day-time").innerHTML = formatDate(
     response.data.dt * 1000
   );
-  let imgElement = document.querySelector("img");
   let icons = response.data.weather[0].icon;
+
+  let imgElement = document.querySelector("img");
   imgElement.setAttribute(
     "src",
-    "https://openweathermap.org/img/wn/10d@2x.png"
+    `http://openweathermap.org/img/wn/${icons}@2x.png`
   );
 }
 
@@ -46,7 +47,7 @@ function showCityName(event) {
 
 let apiKey = `ae2ec4b5c918b23f97601cbc84d57ecd`;
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather`;
-let cityName = `Hamilton`;
+let cityName = `Paris`;
 
 let cityNameResult = document.querySelector("#citybutton");
 cityNameResult.addEventListener("click", showCityName);
