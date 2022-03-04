@@ -51,6 +51,12 @@ img {
   font-size: 60px;
 }
 
+.active {
+  cursor: default;
+  color: black;
+  text-decoration: none;
+}
+
 .units {
   position: relative;
   top: -35px;

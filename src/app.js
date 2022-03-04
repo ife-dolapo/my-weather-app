@@ -30,8 +30,10 @@ function displayTemperature(response) {
   document.querySelector("#day-time").innerHTML = formatDate(
     response.data.dt * 1000
   );
-  let icons = response.data.weather[0].icon;
 
+  celciusTemperature = response.data.main.temp;
+
+  let icons = response.data.weather[0].icon;
   let imgElement = document.querySelector("img");
   imgElement.setAttribute(
     "src",
@@ -58,11 +60,22 @@ entryForm.addEventListener("submit", handleSubmit);
 function getFahrenheitTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
+  celciusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
   let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
-let celciusTemperature = null;
+function getCelciusTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  celciusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  temperatureElement.innerHTML = Math.round(celciusTemperature);
+}
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", getFahrenheitTemperature);
+
+let celciusLink = document.querySelector("#celcius-link");
+celciusLink.addEventListener("click", getCelciusTemperature);
