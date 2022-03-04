@@ -25,19 +25,21 @@
     <div class="container">
       <div class="app-body-wrapper">
         <div class="app-body">
-          <div class="row">
-            <div class="col-6">
-              <input
-                type="text"
-                class="entercity"
-                id="citysearch"
-                placeholder="Enter a City"
-              />
+          <form id="entry-form">
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="text"
+                  class="entercity"
+                  id="city-search"
+                  placeholder="Enter a City"
+                />
+              </div>
+              <div class="col-6">
+                <button class="search">Search</button>
+              </div>
             </div>
-            <div class="col-6">
-              <button class="search" id="citybutton">Search</button>
-            </div>
-          </div>
+          </form>
           <h1 id="city">Hamilton</h1>
           <div>
             <img src="" alt="" width="160" id="icon" />
