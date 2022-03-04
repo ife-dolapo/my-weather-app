@@ -51,6 +51,18 @@ function handleSubmit(event) {
   search(searchInputElement.value);
 }
 
-
 let entryForm = document.querySelector("#entry-form");
 entryForm.addEventListener("submit", handleSubmit);
+
+//fahrenheit conversion
+function getFahrenheitTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+let celciusTemperature = null;
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", getFahrenheitTemperature);
