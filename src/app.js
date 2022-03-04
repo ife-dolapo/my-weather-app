@@ -27,6 +27,8 @@ function displayTemperature(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].description;
+  document.querySelector("#wind").innerHTML = `Wind speed:
+  ${Math.round(response.data.wind.speed)} m/s`;
   document.querySelector("#day-time").innerHTML = formatDate(
     response.data.dt * 1000
   );
@@ -52,6 +54,8 @@ function handleSubmit(event) {
   let searchInputElement = document.querySelector("#city-search");
   search(searchInputElement.value);
 }
+
+search("Hamilton, Ontario");
 
 let entryForm = document.querySelector("#entry-form");
 entryForm.addEventListener("submit", handleSubmit);
