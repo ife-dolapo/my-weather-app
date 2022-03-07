@@ -15,7 +15,7 @@ li::first-letter {
   text-transform: capitalize;
 }
 
-img {
+.weather-img {
   float: right;
 }
 
@@ -61,4 +61,22 @@ img {
   position: relative;
   top: -35px;
   font-size: small;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.weather-forecast-day-temp-body {
+  background-color: azure;
+  border-radius: 4px;
+}
+
+.weather-forecast-temps {
+  font-size: 16px;
+}
+
+.weather-forecast-min-temp {
+  opacity: 0.5;
 }
