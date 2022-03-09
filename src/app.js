@@ -21,6 +21,38 @@ function formatDate(timestamp) {
   return `${day}, ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#fore-cast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = [
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+    <div class="col-2">
+      <div class="weather-forecast-day-temp-body">
+        <div class="weather-forecast-day">${day}</div>
+        <img src="src/weatherapp.png" alt="" width="30" />
+        <div class="weather-forecast-temps">
+          <span class="weather-forecast-max-temp">-3º</span>
+          <span class="weather-forecast-min-temp"> 3º </span>
+        </div>
+      </div>
+    </div>
+  `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
