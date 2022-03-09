@@ -22,7 +22,7 @@ function formatDate(timestamp) {
 }
 
 function displayForecast() {
-  let forecastElement = document.querySelector("#fore-cast");
+  let forecast = document.querySelector("#fore-cast");
 
   let forecastHTML = `<div class="row">`;
   let days = [
@@ -50,7 +50,7 @@ function displayForecast() {
   `;
   });
   forecastHTML = forecastHTML + `</div>`;
-  forecastElement.innerHTML = forecastHTML;
+  forecast.innerHTML = forecastHTML;
 }
 
 function displayTemperature(response) {
@@ -88,6 +88,7 @@ function handleSubmit(event) {
 }
 
 search("Hamilton, Ontario");
+displayForecast();
 
 let entryForm = document.querySelector("#entry-form");
 entryForm.addEventListener("submit", handleSubmit);
